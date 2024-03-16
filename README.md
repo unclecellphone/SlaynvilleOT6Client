@@ -1,4 +1,4 @@
-# OTCv8 Developer Editon (sources)
+# OTCv8 Slaynville Editon (sources)
 
 Ready to use binaries are available in [OTCv8/otclientv8](https://github.com/OTCv8/otclientv8) repository.
 
