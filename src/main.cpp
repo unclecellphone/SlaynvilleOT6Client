@@ -44,7 +44,7 @@ int main(int argc, const char* argv[]) {
     // setup application name and version
     g_app.setName("slaynville");
     g_app.setCompactName(compactName);
-    g_app.setVersion("0.6");
+    g_app.setVersion("0.61");
 
 #ifdef WITH_ENCRYPTION
     if (std::find(args.begin(), args.end(), "--encrypt") != args.end()) {
@@ -56,7 +56,7 @@ int main(int argc, const char* argv[]) {
 #endif
         return 0;
     }
-#endif
+#endif  
 
     if (g_resources.launchCorrect(g_app.getName(), g_app.getCompactName())) {
         return 0; // started other executable

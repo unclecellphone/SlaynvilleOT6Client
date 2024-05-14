@@ -13,11 +13,14 @@ function updateFeatures(version)
     end
     
     -- you can add custom features here, list of them is in the modules\gamelib\const.lua
-    g_game.enableFeature(GameBot)
+    -- g_game.enableFeature(GameBot)
+    g_game.enableFeature(GameClientPing)
     g_game.enableFeature(GameExtendedOpcode)
-    --g_game.enableFeature(GameMinimapLimitedToSingleFloor) -- it will generate minimap only for current floor
+    g_game.enableFeature(GameMinimapLimitedToSingleFloor) -- it will generate minimap only for current floor
     --g_game.enableFeature(GameSpritesAlphaChannel)
     g_game.enableFeature(GameForceLight)
+    g_game.enableFeature(GameNewOutfitProtocol)
+    -- g_game.enableFeature(GameAdditionalVipInfo)
     if(version >= 770) then
         g_game.enableFeature(GameLooktypeU16)
         g_game.enableFeature(GameMessageStatements)
@@ -30,7 +33,6 @@ function updateFeatures(version)
         g_game.enableFeature(GameNewFluids)
         g_game.enableFeature(GameMessageLevel)
         g_game.enableFeature(GamePlayerStateU16)
-        g_game.enableFeature(GameNewOutfitProtocol)
     end
 
     if(version >= 790) then
@@ -83,7 +85,6 @@ function updateFeatures(version)
 
     if(version >= 953) then
         g_game.enableFeature(GamePurseSlot)
-        g_game.enableFeature(GameClientPing)
     end
 
     if(version >= 960) then
