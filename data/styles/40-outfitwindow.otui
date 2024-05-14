@@ -126,7 +126,7 @@ SelectionButton < Panel
 
 OutfitWindow < MainWindow
   size: 735 575
-  text: Customise Character
+  text: Customize Character
   color: #929292
   @onEnter: modules.game_outfit.accept()
   @onEscape: modules.game_outfit.destroy()
